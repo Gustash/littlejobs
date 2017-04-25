@@ -6,4 +6,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request, 'job_index.html')
+    context = {
+        'title': 'Jobs',
+    }
+    return render(request, 'job_index.html', context)
