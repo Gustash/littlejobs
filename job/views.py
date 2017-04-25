@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('<p>Hello world!</p>')
+    return render(request, 'job_index.html')
